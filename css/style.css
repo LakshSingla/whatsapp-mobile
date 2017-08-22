@@ -1,0 +1,358 @@
+/*Whole Page styling*/
+
+@font-face{
+    font-family: "Paul-Grotesk";
+    src: url("../fonts/PaulGrotesk-Regular-Trail.otf");
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "Paul-Grotesk";
+    src: url("../fonts/PaulGrotesk-Bold-Trail.otf");
+    font-weight: bold;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Paul-Grotesk";
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.outer-content-wrapper{
+    /*border: 3px solid black;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D7E660;
+}
+/*End of Whole Page styling*/
+
+    /*Device styling*/
+    .device-content-wrapper{
+        box-sizing: content-box;
+        border: 3px solid black;
+        border-radius: 5px;
+        display: -webkit-box;
+        display: -moz-box;
+        direction: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        max-width: 350px;
+        max-height: 575px;
+    }
+    /*End of Device styling*/
+
+        /*Dropdown Menu styling*/
+        .dropdown-menu-wrapper{
+            /*border: 1px solid black;*/
+            background-color: #004E42;
+            height: 28px;
+            padding-top: 3px;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        
+        .dropdown-menu-wrapper .menu-left{
+            /*border: 1px solid black;*/
+            margin-left: 5px;
+            border: 1px solid #ffffff;
+            width: 18px;
+            display: flex;
+            justify-content: center;
+            border-radius: 1000px;
+            margin-top: -1px;
+        }
+
+        .dropdown-menu-wrapper .menu-right{
+            /*border: 1px solid black;*/
+            margin-right: 5px;
+            
+        }
+
+        .dropdown-menu-wrapper .menu-left, .dropdown-menu-wrapper .menu-right{
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .dropdown-menu-wrapper .menu-right span{
+            font-weight: bold;
+        }
+
+        .dropdown-menu-wrapper .menu-right ul li{
+            /*border: 1px solid black;*/
+            
+            width: 5px;
+            margin:3px;
+        }
+
+        .dropdown-menu-wrapper div ul li{
+            display: inline;
+        }
+
+        /*End of Dropdown Menu styling*/
+
+        /*App Content styling*/
+
+        .app-wrapper{
+            /*border: 1px solid magenta;*/
+            flex-grow: 1;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+            /*App Header styling*/
+            .app-header{
+                /*border: 1px solid black;*/
+                flex-basis: 50px;
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                background-color: #045f50;  
+                justify-content: space-between;
+            }
+
+            .app-header >div{
+                /*border: 1px solid black;*/
+                width: auto;
+            }
+
+            .app-header-left{
+                /*border: 1px solid black;*/
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+            }
+
+            .app-header-left > *{
+                color: #ffffff;
+                font-weight: 300;
+                /*border: 1px solid black;*/
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                align-items: center;
+                margin: 0 7px;
+            }
+
+            .app-header-left .sender-img{
+                background-image: url("../img/chat-person.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 44px;
+                border-radius: 1000px;
+            }
+
+            .app-header-left .sender-info{
+                color: #ffffff;
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .app-header-left .sender-info .sender-name{
+                font-size: 14px;
+                font-weight: bold;
+                margin-bottom: 3px;
+            }
+
+            .app-header-left .sender-info .sender-status{
+                font-size: 12px;
+                align-self: left;
+            }
+
+            .app-header-right{
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                align-items: center;
+            }
+
+            .app-header-right ul li{
+                list-style-type: none;
+                display: inline;
+                color: #ffffff;
+                margin: 0 8px;
+            }
+
+			/*End of App Header Styling*/
+			
+			/*App Main Window styling*/
+
+			.app-main-window{
+				/*border: 1px solid black;*/
+				flex-grow: 1;
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				flex-direction: column;
+				background-image: url("../img/chat-background.jpg");
+				background-image: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			}	
+			
+                /*App Chat styling*/
+                .app-main-window .app-chat{
+                    /*border: 1px solid black;*/
+                    flex-grow: 1;
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                }
+
+                .app-chat .app-dialogue{
+                    /*border: 1px solid black;*/
+                    width: auto;
+                    max-width: 80%;
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 8px;
+                    padding: 2px;
+                    margin-bottom: 0.5px;
+                    font-size: 14px;
+                }
+
+                .app-chat .app-dialogue-me{
+                    background-color: #ddffc4;
+                    align-self: flex-end; 
+                }
+
+                .app-chat .app-dialogue-you{
+                    background-color: #ffffff;
+                    align-self: flex-start;
+                }
+
+                .app-chat .app-dialogue-start{
+                    margin-top: 5px;
+                }
+				/*End of App Chat styling*/
+
+                /*App Input styling*/
+                .app-main-window .app-input{
+                    /*border: 1px solid coral;*/
+                    height: 60px;
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .app-input .app-input-text{
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    /*border: 1px solid blue;*/
+                    flex-grow: 1;
+                    height: 45px;   
+                    padding: 3px;
+                    margin-right: 5px;  
+                    position: relative;
+                }
+
+                .app-input .app-input-text input{
+                    width: 100%;
+                    border-radius: 1000px;
+                    background-color: #ffffff;
+                    border: none;
+                    padding: 10px;
+                    padding-right: 70px;  
+                }
+
+                .app-input .app-input-text input::placeholder{
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                }
+
+
+
+                .app-input .app-input-submit{
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    height: 45px;
+                    width: 45px;
+                    border-radius: 1000px;
+                    background-color: #048777;
+                    color: #ffffff;
+                    font-size: 20px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 5px;
+                }
+
+                .app-input .app-input-media{
+                    position: absolute;
+                    right: 15px;
+                    align-self: center;
+                    color: #818b8c;
+                }
+
+                .app-input .app-input-media ul {
+                    list-style-type: none;
+                }
+                
+                .app-input .app-input-media ul li{
+                    /*border: 1px solid black;*/
+                    display: inline;
+                    font-size: 22px;
+                }
+				/*End of App Input styling*/
+
+			/*End of App Main Windows styling*/
+
+
+        /*End of App Content styling*/
